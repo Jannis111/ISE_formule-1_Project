@@ -1,0 +1,29 @@
+USE Formule_1
+GO
+
+CREATE OR ALTER TRIGGER TR_deelnemendeCoureurOuderDanVijftien
+ON DEELNEMENDECOUREUR
+AFTER insert, update 
+AS
+BEGIN
+IF @@ROWCOUNT = 0
+RETURN
+SET NOCOUNT ON 
+	IF EXISTS	
+	(
+		SELECT 1 
+		FROM inserted i INNER JOIN DEELNEMENDECOUREUR D
+		ON i.COUREURID = D.COUREURID
+		WHERE EXISTS
+		(
+			SELECT 1
+			FROM COUREUR C
+			WHERE D.STARTDATUM < DATEADD(YEAR, 16, C.GEBOORTEDATUM) 
+		) 
+	) 
+	RAISERROR ('A coureur must be 16 or older to participate in a race.', 16, 1);
+ 
+END
+
+
+

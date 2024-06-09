@@ -1,0 +1,18 @@
+{
+  "name": "ise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CreateExport.js",
+  "scripts": {
+    "export": "node CreateExport.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.aimsites.nl/scm/ises2a4/code.git"
+  },
+  "private": true,
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "md-to-pdf": "^5.2.4"
+  }
+}

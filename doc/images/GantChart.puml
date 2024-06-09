@@ -1,0 +1,24 @@
+@startgantt
+[Inception fase] requires 7 days
+[Elaboration fase] requires 14 days
+[Construction fase] requires 7 weeks
+[Transition fase] requires 7 days
+[Koningsdag] requires 1 day
+[Meivakantie] requires 9 days
+[Bevreidingsdag] requires 1 day
+[Hemelvaartsdag] requires 2 days
+[Pinksteren] requires 1 day
+
+Project starts 2024-04-08
+[Inception fase] starts 2024-04-08
+[Elaboration fase] starts 2024-04-15
+[Construction fase] starts 2024-04-29
+[Transition fase] starts 2024-06-17
+[Koningsdag] starts 2024-04-27
+[Meivakantie] starts 2024-04-27
+[Bevreidingsdag] starts 2024-05-05
+[Hemelvaartsdag] starts 2024-05-09
+[Pinksteren] starts 2024-05-20
+
+
+@endgantt

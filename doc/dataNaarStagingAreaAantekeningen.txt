@@ -1,0 +1,10 @@
+Documenteer wat get verschil is tussen send_json_to_api en sp_createCircuitsJson
+
+
+1 insert stored procedure runt. voegt data toe aan relationele database en zet de bijbehorende select stored procedure in het executie schema.
+2 Executie schema/job roept select stored procedure aan.
+3 select stored procedure haalt de data uit de relationele database en zet dit om naar een JSON. Vervolgens roept de select procedure de send_data_to_api procedure aan met JSON in de parameters meegeven.
+4 De send_data_to_api procedure verstuurd de JSON naar de API.
+5 De API check of de JSON bestand all bestaat in de non-relationele database. Zo ja verwijderdt hij dat bestand.
+6 De API stuurt de JSON op naar de non-relationele database.
+

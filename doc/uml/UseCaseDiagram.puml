@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+skinparam linetype ortho
+
+:F1 beheerder: as F1B
+:Race expert: as F1E
+
+rectangle  "Systeem" {
+
+    F1E -- (CRUD race planning)
+    F1E -- (CRUD-uitslagen van race)
+    F1E -- (CRUD-uitslagen van kwalificatie)
+    F1B -- (CRUD-coureur)
+    F1B -- (CRUD-team)
+    F1B -- (CRUD-circuit)
+    F1B -- (CRUD-land)
+}
+@enduml
